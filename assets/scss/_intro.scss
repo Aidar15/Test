@@ -1,0 +1,126 @@
+.intro-container {
+    background-image: url('../img/main-image.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: 0px 0;
+
+    @media(min-width: $screensz1) and (max-width: 1500px) {
+        background-position: -250px 0;
+    }
+}
+
+.intro {
+
+    &__wrapper {
+        padding: 0 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        @media(min-width: $screensz1) {
+           padding: 0 15px; 
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        padding-top: 100px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 700;
+        max-width: 350px;
+
+        & span {
+            color: #3E9CDC;
+            max-width: 350px;
+        }
+
+        @media(min-width: $screensz1) {
+            font-size: 48px;
+            min-width: 780px;
+            padding-top: 203px;
+        }
+    }
+
+    &__description {
+        padding-top: 20px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        max-width: 320px;
+
+        @media(min-width: $screensz1) {
+            font-size: 20px;
+            max-width: none;
+            margin-top: 80px;
+        }
+    }
+
+    &__advantages {
+        color: #000;
+        font-size: 14px;
+
+        @media(min-width: $screensz1) {
+            font-size: 20px;
+            max-width: none;
+            line-height: 24px;
+        }
+        
+
+        & li:first-child {
+            margin-top: 10px;
+        }
+
+        & li:last-child {
+            margin-bottom: 30px;
+
+            @media(min-width: $screensz1) {
+                margin-bottom: 80px;
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__btn {
+        display: flex;
+        width: 183px;
+        height: 43px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-size: 13px;
+        transition: all 0.3s ease 0s;
+    }
+
+    &__btn_order {
+        background-color: #3E9CDC;
+        border: 1px solid #FFF;
+        color: #fff;
+        margin: 0 15px 40px 0px;
+
+        @media(min-width: $screensz1) {
+            margin: 0 30px 200px 0px;
+            width: 183px;
+            height: 43px;
+            padding: 0;
+        }
+        &:hover {
+            background-color: #286690;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    &__btn_more {
+        padding: 15px 30px;
+        background-color: #fff;
+        border: 1px solid #6F6D7B;
+        color: #2A2B30;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.345);
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
