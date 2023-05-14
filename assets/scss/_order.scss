@@ -154,6 +154,7 @@
         width: 360px;
         color: #272733;
         margin: 0 15px 15px 15px;
+        position: relative;
 
         @media(max-width: 810px) {
             width: 100%;
@@ -283,17 +284,15 @@
   .content{
     display: none;
     padding: 2px 4px 0px 10px;
-    background: rgba(39, 39, 51, 0.9);
+    background: #272733;
     border-radius: 0 0 7px 7px;
     border: 1px solid #3D4050;
-    width: 360px;
-
-    @media(max-width: 810px) {
-        width: 100%;
-    }
+    width: 100%;
   }
   .order__select.active .content{
     display: block;
+    position: absolute;
+    z-index: 2;
   }
   .content .search{
     display: none;
