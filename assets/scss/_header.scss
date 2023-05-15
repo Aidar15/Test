@@ -94,13 +94,6 @@
         }
     }
 
-    &__list > li:hover {
-        @media (min-width: $screensz1) {
-            text-decoration: underline;
-            transition: transform 0.3s ease 0s;
-        }
-    }
-
     &__list > li:last-child {
         margin-right: 0;
     }
@@ -110,14 +103,18 @@
         font-weight: 600;
         text-transform: uppercase;
         color:#fff;
+        transition: transform 0.3s ease 0s;
 
         @media (max-width: $screensz1) {
             font-size: 25px;
         }
-    }
 
-    &__link_active {
-        color:#42A9ED;
+        &:hover {
+            @media (min-width: $screensz1) {
+                color:#42A9ED;
+                transition: transform 0.3s ease 0s;
+            }
+        }
     }
 }
 

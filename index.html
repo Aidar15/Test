@@ -16,7 +16,7 @@
                 <div class="main-header__menu">
                     <ul class="main-header__list">
                         <li>
-                            <a href="#" class="main-header__link main-header__link_active">Бизнес</a>
+                            <a href="#" class="main-header__link">Бизнес</a>
                         </li>
                         <li>
                             <a href="#" class="main-header__link">О нас</a>
@@ -113,12 +113,15 @@
                         <div class="slider__percent"></div>
                     </div>
                     <div class="slider">
-                        <input type="range" id="range" min="0" max="100" value="75" class="slider__input">
+                        <input type="range" id="range" min="0" max="100" value="75" class="slider__input" name="percent">
                     </div>
                 </div>
-                <a href="#" class="order__download"><i class="fa-regular fa-file-lines"></i>Прикрепить файл</a>
+                <button class="order__download"><label for="file"><i class="fa-regular fa-file-lines"></i>Прикрепить файл</label></button>
+                <input id="file" type="file" name="downloadfile" style="display: none;">
+                <!-- <button class="order__download"><label for="file"><i class="fa-regular fa-file-lines"></i>Прикрепить файл</label></button>
+                <input class="order__download-input" type="file" name="file" id=""> -->
             </div>
-            <a href="#" class="order__send">Отправить</a>
+            <button href="#" class="order__send">Отправить</button>
         </div>
     </section>
     <footer class="page-footer">
@@ -130,8 +133,8 @@
                 <div class="page-footer__link"><img src="./assets/img/webmoney.svg" alt="webmoney" class="page-footer__icon"><span>Web Money</span></div>
             </div>
             <div class="page-footer__social">
-                <a href="#" class="page-footer__link"><img src="./assets/img/envelope.svg" alt="post" class="page-footer__icon"><span>info@ipsum228.com</span> </a>
-                <a href="#" class="page-footer__link"><img src="./assets/img/vkontakte.svg" alt="vk" class="page-footer__icon icon-vk"><span>Мы вконтакте</span> </a>
+                <a href="mailto:info@ipsum228.com" class="page-footer__link"><img src="./assets/img/envelope.svg" alt="post" class="page-footer__icon"><span>info@ipsum228.com</span> </a>
+                <a href="https://vk.com" class="page-footer__link"><img src="./assets/img/vkontakte.svg" alt="vk" class="page-footer__icon icon-vk"><span>Мы вконтакте</span> </a>
             </div>
         </div>
     </footer>

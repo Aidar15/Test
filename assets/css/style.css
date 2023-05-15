@@ -163,12 +163,6 @@ body.lock {
     border-bottom: 2px solid #fff;
   }
 }
-@media (min-width: 1200px) {
-  .main-header__list > li:hover {
-    text-decoration: underline;
-    transition: transform 0.3s ease 0s;
-  }
-}
 .main-header__list > li:last-child {
   margin-right: 0;
 }
@@ -177,14 +171,18 @@ body.lock {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  transition: transform 0.3s ease 0s;
 }
 @media (max-width: 1200px) {
   .main-header__link {
     font-size: 25px;
   }
 }
-.main-header__link_active {
-  color: #42A9ED;
+@media (min-width: 1200px) {
+  .main-header__link:hover {
+    color: #42A9ED;
+    transition: transform 0.3s ease 0s;
+  }
 }
 
 .main-header__burger {
@@ -392,7 +390,7 @@ body.lock {
   margin-top: 30px;
   color: #BBB;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .order__message {
@@ -596,6 +594,9 @@ body.lock {
   border: 2px solid #3E9CDC;
   border-radius: 3px;
   transition: all 0.3s ease 0s;
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 600;
 }
 @media (max-width: 1200px) and (min-width: 810px) {
   .order__download {
@@ -610,6 +611,7 @@ body.lock {
 }
 .order__download i {
   margin-right: 10px;
+  font-size: 20px;
 }
 .order__download:hover {
   background-color: rgba(255, 255, 255, 0.647);
@@ -631,6 +633,7 @@ body.lock {
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   transition: all 0.3s ease 0s;
+  font-family: "Lato";
 }
 @media (max-width: 810px) {
   .order__send {
@@ -846,7 +849,7 @@ body.lock {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 850px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .page-footer__wrapper {
     justify-content: space-between;
   }

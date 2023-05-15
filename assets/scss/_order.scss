@@ -34,7 +34,7 @@
         margin-top: 30px;
         color: #BBB;
         font-size: 16px;
-        font-weight: 800;
+        font-weight: 400;
 
         @media(min-width: $screensz1) {
             font-size: 18px;
@@ -212,6 +212,9 @@
         border: 2px solid #3E9CDC;
         border-radius: 3px;
         transition: all 0.3s ease 0s;
+        font-family: 'Lato';
+        font-size: 15px;
+        font-weight: 600;
         @media(max-width: $screensz1) and (min-width: 810px) {
             width: 250px;
         }
@@ -222,6 +225,7 @@
 
         & i {
             margin-right: 10px;
+            font-size: 20px;
         }
         &:hover {
             background-color: rgba(255, 255, 255, 0.647);
@@ -245,6 +249,7 @@
         border: 1px solid #FFFFFF;
         border-radius: 4px;
         transition: all 0.3s ease 0s;
+        font-family: 'Lato';
         @media(max-width: 810px) {
             max-width: none;
             width: 100%;
